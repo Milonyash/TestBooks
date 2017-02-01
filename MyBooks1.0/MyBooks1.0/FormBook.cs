@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -23,7 +17,7 @@ namespace MyBooks1._0
         }
         DataTable dt = null;
         XDocument xDoc;
-        string name, name1;
+        string name, path1, path2;
         private DataTable GetDataTableFromDGV(DataGridView dgv)
         {
             var dt = new DataTable();
@@ -35,13 +29,11 @@ namespace MyBooks1._0
                 }
 
             }
-
             dt.TableName = "book";
             dt.Columns[0].ColumnName = "title";
             dt.Columns[1].ColumnName = "autor";
             dt.Columns[2].ColumnName = "category";
             dt.Columns[3].ColumnName = "price";
-            //dt.Columns[4].ColumnName = "year";
             object[] cellValues = new object[dgv.Columns.Count];
             foreach (DataGridViewRow row in dgv.Rows)
             {
@@ -56,14 +48,24 @@ namespace MyBooks1._0
         }
         private void SaveXML_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\ПК\Desktop\data.xml";
-            DataTable dT = GetDataTableFromDGV(dtGr);
-            DataSet dS = new DataSet("bookstore");
-            dS.Tables.Add(dT);
-
-            dS.WriteXml(path);
-
-            MessageBox.Show("Записано");
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "XML|*.xml";
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    path2 = sfd.FileName;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+                DataTable dT = GetDataTableFromDGV(dtGr);
+                DataSet dS = new DataSet("bookstore");
+                dS.Tables.Add(dT);
+                dS.WriteXml(path2);
+                MessageBox.Show("Записано");
+            }
         }
 
         private void ReportXML_Click(object sender, EventArgs e)
@@ -71,23 +73,12 @@ namespace MyBooks1._0
             Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             string path = @"C:\Users\ПК\Desktop\data.xml";
-
             openFileDialog1.Filter = "html files (*.html)|*.html";
-
-
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    if ((myStream = openFileDialog1.OpenFile()) != null)
-                    {
-                        using (myStream)
-                        {
-                            name1 = openFileDialog1.FileName;
-
-
-                        }
-                    }
+                    path1 = openFileDialog1.FileName;
                 }
 
                 catch (Exception ex)
@@ -99,7 +90,7 @@ namespace MyBooks1._0
                 xslt.Load("xslinclude.xsl");
                 XPathDocument xpathdocument = new
                 XPathDocument(path);
-                StreamWriter sw = new StreamWriter(name1);
+                StreamWriter sw = new StreamWriter(path1);
                 XmlTextWriter writer = new XmlTextWriter(sw);
                 writer.Formatting = Formatting.Indented;
 
@@ -122,7 +113,7 @@ namespace MyBooks1._0
                     XElement bookAttribute = elm.Element("title");
                     XElement autorElement = elm.Element("author");
                     XElement priceElement = elm.Element("price");
-                    if (nameAttribute != null && autorElement != null && priceElement != null)
+                    if (bookAttribute.Value != null && nameAttribute != null && autorElement != null && priceElement != null)
                     {
                         dt.Rows.Add(bookAttribute.Value, autorElement.Value, nameAttribute.Value, priceElement.Value);
                     }
@@ -146,8 +137,6 @@ namespace MyBooks1._0
             dt.Columns.Add(colAutor);
             dt.Columns.Add(colCategory);
             dt.Columns.Add(colPrice);
-
-
             return dt;
         }
 
@@ -159,20 +148,15 @@ namespace MyBooks1._0
 
         private void OpenXML_Click(object sender, EventArgs e)
         {
-
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-
-            openFileDialog1.Filter = "xml files (*.xml)|*.xml";
-
-
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            OpenFileDialog op = new OpenFileDialog();
+            op.Filter = "xml files (*.xml)|*.xml";
+            if (op.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                          name = openFileDialog1.FileName;
-                          xDoc = XDocument.Load(openFileDialog1.FileName);
-                          dtGr.DataSource = ReadXml(openFileDialog1);
-
+                    name = op.FileName;
+                    xDoc = XDocument.Load(name);
+                    dtGr.DataSource = ReadXml(op);
                 }
                 catch (Exception ex)
                 {
