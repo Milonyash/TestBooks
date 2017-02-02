@@ -1,9 +1,0 @@
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\bin\Debug\MyBooks1.0.exe.config
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1.0.csprojResolveAssemblyReference.cache
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1._0.Properties.Resources.resources
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1.0.csproj.GenerateResource.Cache
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\bin\Debug\MyBooks1.0.exe
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\bin\Debug\MyBooks1.0.pdb
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1.0.exe
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1.0.pdb
-C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\MyBooks1.0\obj\Debug\MyBooks1._0.FormBook.resources

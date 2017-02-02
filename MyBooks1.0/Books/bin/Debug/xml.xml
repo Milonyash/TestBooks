@@ -1,0 +1,27 @@
+<NewDataSet>
+  <Table1>
+    <Column1>Everyday Italian</Column1>
+    <Column2>cooking</Column2>
+    <Column3>Giada De Laurentiis</Column3>
+    <Column4>30.00</Column4>
+  </Table1>
+  <Table1>
+    <Column1>Harry Potter</Column1>
+    <Column2>children</Column2>
+    <Column3>J K. Rowling</Column3>
+    <Column4>29.99</Column4>
+  </Table1>
+  <Table1>
+    <Column1>XQuery Kick Start</Column1>
+    <Column2>web</Column2>
+    <Column3>James McGovern</Column3>
+    <Column4>49.99</Column4>
+  </Table1>
+  <Table1>
+    <Column1>Learning XML</Column1>
+    <Column2>web</Column2>
+    <Column3>Erik T. Ray</Column3>
+    <Column4>39.95</Column4>
+  </Table1>
+  <Table1 />
+</NewDataSet>

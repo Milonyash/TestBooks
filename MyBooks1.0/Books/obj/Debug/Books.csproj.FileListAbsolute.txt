@@ -1,0 +1,18 @@
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\bin\Debug\Books.exe.config
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\bin\Debug\Books.exe
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\bin\Debug\Books.pdb
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.csprojResolveAssemblyReference.cache
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.BooksForm.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.Properties.Resources.resources
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.csproj.GenerateResource.Cache
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.exe
+C:\Users\ПК\Documents\Visual Studio 2015\Projects\Задачи\Books\Books\obj\Debug\Books.pdb
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\bin\Debug\Books.exe.config
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.exe
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.pdb
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.csprojResolveAssemblyReference.cache
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.BooksForm.resources
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.Properties.Resources.resources
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\obj\Debug\Books.csproj.GenerateResource.Cache
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\bin\Debug\Books.exe
+C:\Users\ПК\Desktop\Git\TestBooks\MyBooks1.0\Books\bin\Debug\Books.pdb

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3DB5D45F-4050-4E2F-ABBA-335EDCBEE461}</ProjectGuid>
+    <ProjectGuid>{4D504769-766D-4B28-B4E1-DF25883AD477}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyBooks1._0</RootNamespace>
-    <AssemblyName>MyBooks1.0</AssemblyName>
+    <RootNamespace>Books</RootNamespace>
+    <AssemblyName>Books</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormBook.cs">
+    <Compile Include="BooksForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBook.Designer.cs">
-      <DependentUpon>FormBook.cs</DependentUpon>
+    <Compile Include="BooksForm.Designer.cs">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBook.resx">
-      <DependentUpon>FormBook.cs</DependentUpon>
+    <EmbeddedResource Include="BooksForm.resx">
+      <DependentUpon>BooksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

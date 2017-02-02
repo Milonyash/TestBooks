@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyBooks1._0.Properties
+namespace Books.Properties
 {
 
 
